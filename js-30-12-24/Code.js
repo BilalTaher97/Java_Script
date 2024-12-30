@@ -5,7 +5,7 @@
 let x = 2250;
 let Zakat;
 
-Zakat = x * 2.5;
+Zakat = x * 0.025;
 
 document.write("Zakat : " + Zakat);
 document.write('<br><br><br>')
