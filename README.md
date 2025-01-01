@@ -1,1 +1,1 @@
-# Java_Scribt
+# Java_Script
