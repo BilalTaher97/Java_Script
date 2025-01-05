@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        ul,
+        li {
+
+            padding: 10px;
+            margin-right: 121px;
+            display: flex;
+            justify-content: flex-end;
+            background-color: bisque;
+        }
+
+        img {
+
+            display: none;
+        }
+
+        @media screen and (max-width:426px) {
+
+            ul {
+
+                display: none;
+            }
+
+            img {
+
+                display: inline-block;
+                cursor: pointer;
+            }
+
+
+        }
+
+
+        .Show {
+
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <img src="/Menu.png" alt="" id="Img-1" onclick="Show()">
+
+    <ul id="List-1">
+        <li class="One-List">Home</li>
+        <li class="One-List">Serices</li>
+        <li class="One-List">About us</li>
+        <li class="One-List">Contact us</li>
+
+    </ul>
+
+    <script src="./Code.js"></script>
+
+    <script>
+
+        function Show() {
+
+            let MainList = document.getElementById('List-1');
+
+            if (MainList.className == 'Show')
+                MainList.className = "";
+            else
+                MainList.className = "Show";
+
+        }
+
+    </script>
+
+</body>
+
+</html>
