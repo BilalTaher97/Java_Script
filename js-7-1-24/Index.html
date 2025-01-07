@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        span {
+
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <form action="">
+
+        <label for="FName">Enter a FName:</label>
+        <br>
+        <input type="text" id="FName" onkeyup="ValidFName()">
+        <span id="Error-FName"></span>
+        <br><br>
+        <label for="LName">Enter a LName:</label>
+        <br>
+        <input type="text" id="LName" onkeyup="ValidLName()">
+        <span id="Error-LName"></span>
+        <br><br>
+        <label for="Bdate">Enter a Bdate:</label>
+        <br>
+        <input type="text" id="Bdate" onkeyup="ValidBdate()" placeholder="yyyy-mm-dd">
+        <span id="Error-Bdate"></span>
+        <br><br>
+        <label for="email">Enter an email:</label>
+        <br>
+        <input type="text" id="email" onkeyup="Validemail()">
+        <span id="Error-email"></span>
+        <br><br>
+        <label for="Confirm">Confirm Email:</label>
+        <br>
+        <input type="text" id="Confirm" onkeyup="ValidConfirmEmail()">
+        <span id="Error-Confirm_email"></span>
+        <br><br>
+        <label for="Password">Password:</label>
+        <br>
+        <input type="text" id="Password" onkeyup="ValidPassword()">
+        <span id="Error-Password"></span>
+        <br><br>
+        <label for="C_Password">Confirm Password:</label>
+        <br>
+        <input type="text" id="C_Password" onkeyup="ValidConfirmPassword()">
+        <span id="Error-C_Password"></span>
+
+    </form>
+
+    <script src="./code.js"></script>
+</body>
+
+</html>
